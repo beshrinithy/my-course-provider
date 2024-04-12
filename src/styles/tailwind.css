@@ -1,4 +1,69 @@
-/* src/styles/tailwind.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Set font family */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Define colors */
+/* Font color (Heading) - #1E2022 */
+.text-heading {
+    color: #1e2022;
+}
+
+/* Font color (Subtitle) - #989090 */
+.text-subtitle {
+    color: #989090;
+}
+
+/* Background color - #ffffff */
+.bg-background {
+    background-color: #ffffff;
+}
+
+/* Logo color - #CF2D2D */
+.logo-color {
+    color: #cf2d2d;
+}
+
+/* Stroke/border color - #B0BABF */
+.stroke-color {
+    stroke: #b0babf;
+}
+/* Add this CSS to your styles/tailwind.css or a separate CSS file */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+
